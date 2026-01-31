@@ -1,6 +1,6 @@
 // OpenCharger API Configuration
 export const OPENCHARGER_CONFIG = {
-  API_KEY: import.meta.env.VITE_OPENCHARGER_API_KEY || 'b9e6e9b4-66ec-4bc3-9ee8-bed93c7ac013',
+  API_KEY: import.meta.env.VITE_OPENCHARGER_API_KEY || (() => { throw new Error('VITE_OPENCHARGER_API_KEY is not set') })(),
   API_BASE: import.meta.env.VITE_OPENCHARGER_API_BASE || 'https://api.openchargemap.io/v3',
   
   // API Endpoints

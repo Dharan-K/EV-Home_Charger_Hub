@@ -87,7 +87,7 @@ const results = await searchChargepointsOpenCharger({
 Your API configuration is stored in `.env.local`:
 
 ```env
-VITE_OPENCHARGER_API_KEY=b9e6e9b4-66ec-4bc3-9ee8-bed93c7ac013
+VITE_OPENCHARGER_API_KEY=your_api_key_here
 VITE_OPENCHARGER_API_BASE=https://api.openchargemap.io/v3
 ```
 
