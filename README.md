@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+# HomeChargerShare
 
-## Project info
+A comprehensive web platform for sharing and renting home EV chargers, built to connect EV owners with available charging infrastructure.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Features
 
-## How can I edit this code?
+- **Interactive Maps**: View charger locations with real-time data from OpenCharger API
+- **Charger Listings**: Browse and rent home chargers from verified hosts
+- **User Authentication**: Secure login/signup with Firebase
+- **Billing Integration**: Seamless payment processing for rentals
+- **Responsive Design**: Mobile-friendly interface built with Tailwind CSS
+- **Real-time Availability**: Check charger status and book instantly
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **Backend Services**: Firebase (Authentication, Firestore)
+- **Maps & API**: OpenCharger API, Leaflet Maps
+- **State Management**: React Context
+- **Routing**: React Router
+- **Build Tool**: Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 📋 Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
 
-**Use your preferred IDE**
+## 🚀 Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Dharan-K/EV-Home_Charger_Hub.git
+   cd EV-Home_Charger_Hub
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Set up environment variables**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   Create a `.env.local` file in the root directory:
+   ```env
+   VITE_OPENCHARGER_API_KEY=your_opencharger_api_key
+   VITE_OPENCHARGER_API_BASE=https://api.openchargemap.io/v3
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+   The application will be available at `http://localhost:5173`
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📖 Usage
+
+- **Browse Chargers**: View available home chargers on the interactive map
+- **Rent a Charger**: Select a charger and complete booking with integrated billing
+- **List Your Charger**: Register as a host and add your home charger to the platform
+- **Manage Bookings**: Track your rentals and earnings
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Page components
+├── contexts/           # React contexts for state management
+├── lib/                # Utility functions and API clients
+├── hooks/              # Custom React hooks
+├── data/               # Static data and mock data
+└── services/           # External API services
 ```
 
-**Edit a file directly in GitHub**
+## 🤝 Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**Use GitHub Codespaces**
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📄 License
 
-## What technologies are used for this project?
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is built with:
+## 👤 Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Dharan-K**
+- Email: dharankandasamy2007@gmail.com
+- GitHub: [@Dharan-K](https://github.com/Dharan-K)
 
-## How can I deploy this project?
+## 🙏 Acknowledgments
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- OpenCharger API for providing charger location data
+- Firebase for backend services
+- shadcn/ui for beautiful UI components
